@@ -1,0 +1,228 @@
+body{
+  font-family: comic sans ms;
+  background-color: azure;
+}
+#quiztitle {
+  height:100px;
+  width:430px;
+  border-radius: 25px;
+  border-size: 2px;
+  border-color: black;
+  border-style: solid;
+  background-color: black;
+  margin-top:170px;
+}
+#quiztitle:hover{
+  animation-name: spin;
+  animation-duration: 750ms;
+  animation-iteration-count: one;
+  animation-timing-function: linear; 
+  /* transform: rotate(3deg); */
+   /* transform: rotate(0.3rad);/ */
+   /* transform: rotate(3grad); */ 
+   /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+#titleletter{
+  margin-right: -10px;
+  margin-left: -10x;
+}
+#startlink {
+  margin-top:160px;
+  height:50px;
+  width:200px;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  background-color: black;
+  padding-top:20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+#startlink:hover {
+  background-color:white
+}
+#question{
+  margin-left:10px;
+  width:200px;
+  height:50px;
+  border-radius:5px;
+  border-width:4px;
+  border-color: black;
+  border-style: solid;
+  background-color: yellow;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+#gameovertitle {
+  font-size:100px;
+  color:red;
+}
+#answer{
+  padding-left:5px;
+  padding-right: 5px;
+  padding-top: 65px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:240px;
+  height: 100px;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  background-color: azure;
+  font-size: 30px;
+  text-align: center;
+}
+#extraspacing{
+  padding-left:5px;
+  padding-right: 5px;
+  padding-top: 40px;
+  padding-bottom:25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:240px;
+  height: 100px;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  background-color: azure;
+  font-size: 30px;
+  text-align: center;
+}
+
+#answer:hover, #extraspacing:hover, #extraspacing2:hover, specialone:hover{
+  border-color: yellow;
+  box-shadow: 5px 5px;
+}
+
+#answertwolines:hover{
+  border-color: yellow;
+  box-shadow: 5px 5px;
+}
+a {
+    color: #0060B6;
+    text-decoration: none;
+}
+#comment {
+  font-size:40px;
+}
+.container span::before{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    content:attr(data-title);
+    color:#666;
+    text-align:center;
+
+    opacity:0;
+
+    /* Animate the transitions */
+    -webkit-transition:opacity 0.4s;
+    transition:opacity 0.4s;
+}
+
+.container span:hover::before{
+    opacity:1;
+}
+#endpage {
+  margin-top:60px;
+  width:700px;
+  height:350px;
+  border-radius:25px;
+  border-width:4px;
+  border-color: black;
+  border-style: solid;
+  background-color: yellow;
+  font-size: 30px;
+  color: black;
+  text-align: center;
+  padding-top:10px;
+  font-size:80px;
+}
+
+#fakewin{
+  font-size: 75px;
+  color: blue;
+  text-align: center;
+  margin-top: 200px;
+}
+
+#hidden{
+  color:#2703db;
+}
+#img {
+  size:300px;
+}
+
+#extraspacing2{
+  padding-left:5px;
+  padding-right: 5px;
+  padding-top: 28px;
+  padding-bottom:37px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:240px;
+  height: 100px;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  background-color: azure;
+  font-size: 25px;
+  text-align: center;
+}
+#specialone {
+  padding-left:5px;
+  padding-right: 5px;
+  padding-top: 65px;
+  padding-bottom:65x;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width:240px;
+  height: 100px;
+  border-radius: 5px;
+  border-width: 5px;
+  border-color: black;
+  border-style: solid;
+  background-color: azure;
+  font-size: 15px;
+  text-align: center;
+}
+#secret_o {
+  color:black;
+}
+#secret_o:hover {
+  color:yellow;
+}
+
+#answerquestion{
+  color: black;
+}
+
+#titleanswer{
+  color:black
+}
